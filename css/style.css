@@ -1,5 +1,6 @@
 :root {
   /* 4.98 */
+  /* 4.98 */
   /* text */
   --color-text-100: #1E2021;
   --color-text-200: #242626;
@@ -11,8 +12,9 @@
   --color-text-800: #808387;
   --color-text-900: #97999D;
   /*--color-text-warning:;*/
-  --color-text-error: #D32F2F;
-  --color-text-info: #2272eb;
+  --color-text-info: #0058CC;
+  --color-text-error: #DD3E3E;
+  --color-text-success: #04855D;
   /* icon */
   --color-ico-100: #1E2021;
   --color-ico-200: #242626;
@@ -24,7 +26,7 @@
   --color-ico-800: #808387;
   --color-ico-900: #97999D;
   /* bg */
-  --color-bg-primary: #2272eb;
+  --color-bg-primary: #0058CC;
   --color-bg-lighter: #F9F9FB;
   --color-bg-light: #F6F7FB;
   --color-bg-default: #F4F5F6;
@@ -32,15 +34,15 @@
   --color-bg-darker: #E6EAED;
   --color-bg-blue-light: #F7FCFF;
   --color-bg-blue-default: #F2F8FF;
-  --color-bg-blue-dark: #eff6ff;
-  --color-bg-blue-darker: #d1e8ff;
+  --color-bg-blue-dark: #EDF5FF;
+  --color-bg-blue-darker: #CDE6FA;
   /* border */
-  --color-border-primary: #2272eb;
+  --color-border-primary: #0058CC;
   --color-border-light: #E6EAED;
   --color-border-default: #D5DAE0;
   --color-border-dark: #C5CBD1;
   --color-border-darker: #B9BDC1;
-  --color-btn-primary: #3182f6;
+  --color-btn-primary: #0060E5;
 }
 
 .btn {
