@@ -90,7 +90,6 @@
     --color-text-800: #{$base-color-gray-200};
     --color-text-900: #{$base-color-gray-100};
 
-    /*--color-text-warning:;*/
     --color-text-info: #{$base-color-blue-600};
     --color-text-error: #{$base-color-red-100};
     --color-text-success: #{$base-color-green-100};
@@ -105,6 +104,10 @@
     --color-ico-700: #{$base-color-gray-300};
     --color-ico-800: #{$base-color-gray-200};
     --color-ico-900: #{$base-color-gray-100};
+
+    --color-ico-info: #{$base-color-blue-600};
+    --color-ico-error: #{$base-color-red-100};
+    --color-ico-success: #{$base-color-green-100};
 
     /* bg */
     --color-bg-primary: #{$base-color-blue-600};
