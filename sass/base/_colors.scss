@@ -1,0 +1,114 @@
+:root{
+    $base-color-white: #fff;
+    $base-color-black: #000;
+    
+    $base-color-gray-10: #F9F9FB;
+    $base-color-gray-20: #F6F7FB;
+    $base-color-gray-30: #F4F5F6;
+    $base-color-gray-40: #F0F1F2;
+    $base-color-gray-50: #E6EAED;
+    $base-color-gray-60: #D5DAE0;
+    $base-color-gray-70: #C5CBD1;
+    $base-color-gray-80: #B9BDC1;
+    $base-color-gray-90: #ABAEB2;
+    $base-color-gray-100: #97999D;
+    $base-color-gray-200: #808387;
+    $base-color-gray-300: #707478;
+    $base-color-gray-400: #606366;
+    $base-color-gray-500: #505355;
+    $base-color-gray-600: #414344;
+    $base-color-gray-700: #303234;
+    $base-color-gray-800: #242626;
+    $base-color-gray-900: #1E2021;
+    
+    $base-color-blue-10: #F7FCFF;
+    $base-color-blue-20: #F2F8FF;
+    $base-color-blue-30: #eff6ff;
+    $base-color-blue-40: #d1e8ff;
+    $base-color-blue-50: #bce0ff;
+    $base-color-blue-60: #a6d6ff;
+    $base-color-blue-70: #c9e2ff;
+    $base-color-blue-80: #8fc8ff;
+    $base-color-blue-90: #60aeff;
+    $base-color-blue-100: #90c2ff;
+    $base-color-blue-200: #7fb5ff;
+    $base-color-blue-300: #64a8ff;
+    $base-color-blue-400: #4593fc;
+    $base-color-blue-500: #3182f6;
+    $base-color-blue-600: #2272eb;
+    $base-color-blue-700: #1b64da;
+    $base-color-blue-800: #1957c2;
+    $base-color-blue-900: #194aa6;
+
+    $base-color-red-10: #FEF2F2;
+    $base-color-red-20: #F9EBEB;
+    $base-color-red-30: #F6D4D4;
+    $base-color-red-40: #F4B5B5;
+    $base-color-red-50: #F08B8B;
+    $base-color-red-60: #F07575;
+    $base-color-red-70: #ED6060;
+    $base-color-red-80: #DF4949;
+    $base-color-red-90: #DD3E3E;
+    $base-color-red-100: #D32F2F; /* 4.98 */
+    $base-color-red-200: #C02929;
+    $base-color-red-300: #AB2424;
+    $base-color-red-400: #961A1A;
+    $base-color-red-500: #830F0F;
+    $base-color-red-600: #6F0606;
+    $base-color-red-700: #570000;
+    $base-color-red-800: #420000;
+    $base-color-red-900: #370000;
+
+    /* text */
+    --color-text-100: #{$base-color-gray-900};
+    --color-text-200: #{$base-color-gray-800};
+    --color-text-300: #{$base-color-gray-700};
+    --color-text-400: #{$base-color-gray-600};
+    --color-text-500: #{$base-color-gray-500};
+    --color-text-600: #{$base-color-gray-400};
+    --color-text-700: #{$base-color-gray-300};
+    --color-text-800: #{$base-color-gray-200};
+    --color-text-900: #{$base-color-gray-100};
+
+    /*--color-text-warning:;*/
+    --color-text-error: #{$base-color-red-100};
+    --color-text-info: #{$base-color-blue-600};
+
+    /* icon */    
+    --color-ico-100: #{$base-color-gray-900};
+    --color-ico-200: #{$base-color-gray-800};
+    --color-ico-300: #{$base-color-gray-700};
+    --color-ico-400: #{$base-color-gray-600};
+    --color-ico-500: #{$base-color-gray-500};
+    --color-ico-600: #{$base-color-gray-400};
+    --color-ico-700: #{$base-color-gray-300};
+    --color-ico-800: #{$base-color-gray-200};
+    --color-ico-900: #{$base-color-gray-100};
+
+    /* bg */
+    --color-bg-primary: #{$base-color-blue-600};
+    --color-bg-lighter: #{$base-color-gray-10};
+    
+    --color-bg-light: #{$base-color-gray-20};
+    --color-bg-default: #{$base-color-gray-30};
+    --color-bg-dark: #{$base-color-gray-40};
+    --color-bg-darker: #{$base-color-gray-50};
+
+    --color-bg-blue-light: #{$base-color-blue-10};
+    --color-bg-blue-default: #{$base-color-blue-20};
+    --color-bg-blue-dark: #{$base-color-blue-30};
+    --color-bg-blue-darker: #{$base-color-blue-40};
+    
+    /* border */
+    --color-border-primary: #{$base-color-blue-600};
+    --color-border-light: #{$base-color-gray-50};
+    --color-border-default: #{$base-color-gray-60};
+    --color-border-dark: #{$base-color-gray-70};
+    --color-border-darker: #{$base-color-gray-80};
+
+    --color-btn-primary: #{$base-color-blue-500};
+}
+
+:root{
+
+}

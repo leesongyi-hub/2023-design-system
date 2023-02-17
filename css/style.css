@@ -1,0 +1,56 @@
+:root {
+  /* 4.98 */
+  /* text */
+  --color-text-100: #1E2021;
+  --color-text-200: #242626;
+  --color-text-300: #303234;
+  --color-text-400: #414344;
+  --color-text-500: #505355;
+  --color-text-600: #606366;
+  --color-text-700: #707478;
+  --color-text-800: #808387;
+  --color-text-900: #97999D;
+  /*--color-text-warning:;*/
+  --color-text-error: #D32F2F;
+  --color-text-info: #2272eb;
+  /* icon */
+  --color-ico-100: #1E2021;
+  --color-ico-200: #242626;
+  --color-ico-300: #303234;
+  --color-ico-400: #414344;
+  --color-ico-500: #505355;
+  --color-ico-600: #606366;
+  --color-ico-700: #707478;
+  --color-ico-800: #808387;
+  --color-ico-900: #97999D;
+  /* bg */
+  --color-bg-primary: #2272eb;
+  --color-bg-lighter: #F9F9FB;
+  --color-bg-light: #F6F7FB;
+  --color-bg-default: #F4F5F6;
+  --color-bg-dark: #F0F1F2;
+  --color-bg-darker: #E6EAED;
+  --color-bg-blue-light: #F7FCFF;
+  --color-bg-blue-default: #F2F8FF;
+  --color-bg-blue-dark: #eff6ff;
+  --color-bg-blue-darker: #d1e8ff;
+  /* border */
+  --color-border-primary: #2272eb;
+  --color-border-light: #E6EAED;
+  --color-border-default: #D5DAE0;
+  --color-border-dark: #C5CBD1;
+  --color-border-darker: #B9BDC1;
+  --color-btn-primary: #3182f6;
+}
+
+.btn {
+  display: inline-block;
+  height: 56px;
+  line-height: 56px;
+  padding: 0 12px;
+  border-radius: 4px;
+}
+
+.btn.primary {
+  background-color: var(--color-btn-primary);
+}
