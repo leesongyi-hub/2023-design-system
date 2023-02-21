@@ -125,13 +125,13 @@
 
   /* border */
   --color-border-primary: #{$base-color-blue-600};
-  --color-border-light: #{$base-color-gray-50};
-  --color-border-default: #{$base-color-gray-60};
-  --color-border-dark: #{$base-color-gray-70};
-  --color-border-darker: #{$base-color-gray-80};
+  --color-border-lightest: #{$base-color-gray-20};
+  --color-border-lighter: #{$base-color-gray-30};
+  --color-border-light: #{$base-color-gray-40};
+  --color-border-default: #{$base-color-gray-50};
+  --color-border-dark: #{$base-color-gray-60};
+  --color-border-darker: #{$base-color-gray-70};
+  --color-border-darkest: #{$base-color-gray-80};
 
   --color-btn-primary: #{$base-color-blue-500};
-}
-
-:root {
 }

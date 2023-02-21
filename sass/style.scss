@@ -3,6 +3,7 @@
 @import 'abstracts/mixins';
 
 @import 'base/reset';
+@import 'base/fonts';
 @import 'base/colors';
 @import 'base/typography';
 
@@ -10,3 +11,5 @@
 @import 'components/forms';
 
 @import 'themes/theme';
+
+@import 'pages/main';
