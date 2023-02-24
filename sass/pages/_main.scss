@@ -1,11 +1,30 @@
-@import '../base/colors';
-
 header{width:100%;height:72px;border-bottom: var(--color-border-default);}
 .pageMain{padding-left:240px;height: 100%;}
 .pageMain .lnb{position:fixed;top:0;left:0;width:240px;height:100vh;border-right:1px solid var(--color-border-default);}
-.pageMain main{width:1024px;margin:0 auto;}
+.pageMain main{width:1024px;margin:72px auto 0;}
 
-.color-list{display:flex;}
-.color-list-item .info span{display:block;}
-.color-list-item::before{content:'';display:block;width:100%;height:40px;}
-.color-list-item.gray10::before{background-color:#{base-color-gray-900}}
+.color-list{}
+.color-list-item{display:flex;align-items: center;padding-bottom:8px;margin-bottom:8px;border-bottom:1px solid var(--color-border-light)}
+.color-list-item .info{display:flex;flex:1}
+.color-list-item .info span{display:block;margin-left:40px;color:var(--color-text-600);font-weight:300}
+.color-list-item .info span:nth-child(2){margin-left:auto;}
+.color-list-item::before{content:'';display:block;width:100px;height:40px;border-radius: 4px;}
+
+.color-list-item.gray10::before{background-color:#{$base-color-gray-10}}
+.color-list-item.gray20::before{background-color:#{$base-color-gray-20}}
+.color-list-item.gray30::before{background-color:#{$base-color-gray-30}}
+.color-list-item.gray40::before{background-color:#{$base-color-gray-40}}
+.color-list-item.gray50::before{background-color:#{$base-color-gray-50}}
+.color-list-item.gray60::before{background-color:#{$base-color-gray-60}}
+.color-list-item.gray70::before{background-color:#{$base-color-gray-70}}
+.color-list-item.gray80::before{background-color:#{$base-color-gray-80}}
+.color-list-item.gray90::before{background-color:#{$base-color-gray-90}}
+.color-list-item.gray100::before{background-color:#{$base-color-gray-100}}
+.color-list-item.gray200::before{background-color:#{$base-color-gray-200}}
+.color-list-item.gray300::before{background-color:#{$base-color-gray-300}}
+.color-list-item.gray400::before{background-color:#{$base-color-gray-400}}
+.color-list-item.gray500::before{background-color:#{$base-color-gray-500}}
+.color-list-item.gray600::before{background-color:#{$base-color-gray-600}}
+.color-list-item.gray700::before{background-color:#{$base-color-gray-700}}
+.color-list-item.gray800::before{background-color:#{$base-color-gray-800}}
+.color-list-item.gray900::before{background-color:#{$base-color-gray-900}}
