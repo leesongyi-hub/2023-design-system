@@ -37,7 +37,7 @@ $base-color-blue-500: #0060e5;
 $base-color-blue-600: #0058cc;
 $base-color-blue-700: #004db2;
 $base-color-blue-800: #003780;
-$base-color-blue-900: #202f43;
+$base-color-blue-900: #002D69;
 
 $base-color-red-10: #fef6f6;
 $base-color-red-20: #fef2f2;
@@ -111,27 +111,45 @@ $base-color-green-900: #003829;
 
   /* bg */
   --color-bg-primary: #{$base-color-blue-600};
-  --color-bg-lighter: #{$base-color-gray-10};
+  // --color-bg-lighter: #{$base-color-gray-10};
+  // --color-bg-light: #{$base-color-gray-20};
+  // --color-bg-default: #{$base-color-gray-30};
+  // --color-bg-dark: #{$base-color-gray-40};
+  // --color-bg-darker: #{$base-color-gray-50};
 
-  --color-bg-light: #{$base-color-gray-20};
-  --color-bg-default: #{$base-color-gray-30};
-  --color-bg-dark: #{$base-color-gray-40};
-  --color-bg-darker: #{$base-color-gray-50};
+  // --color-bg-blue-light: #{$base-color-blue-10};
+  // --color-bg-blue-default: #{$base-color-blue-20};
+  // --color-bg-blue-dark: #{$base-color-blue-30};
+  // --color-bg-blue-darker: #{$base-color-blue-40};
 
-  --color-bg-blue-light: #{$base-color-blue-10};
-  --color-bg-blue-default: #{$base-color-blue-20};
-  --color-bg-blue-dark: #{$base-color-blue-30};
-  --color-bg-blue-darker: #{$base-color-blue-40};
+  --color-bg-level-1: #{$base-color-gray-10};
+  --color-bg-level-2: #{$base-color-gray-20};
+  --color-bg-level-3: #{$base-color-gray-30};
+  --color-bg-level-4: #{$base-color-gray-40};
+  --color-bg-level-5: #{$base-color-gray-50};
+
+  --color-bg-blue-level-1: #{$base-color-blue-10};
+  --color-bg-blue-level-2: #{$base-color-blue-20};
+  --color-bg-blue-level-3: #{$base-color-blue-30};
+  --color-bg-blue-level-4: #{$base-color-blue-40};
 
   /* border */
   --color-border-primary: #{$base-color-blue-600};
-  --color-border-lightest: #{$base-color-gray-20};
-  --color-border-lighter: #{$base-color-gray-30};
-  --color-border-light: #{$base-color-gray-40};
-  --color-border-default: #{$base-color-gray-50};
-  --color-border-dark: #{$base-color-gray-60};
-  --color-border-darker: #{$base-color-gray-70};
-  --color-border-darkest: #{$base-color-gray-80};
+  // --color-border-lightest: #{$base-color-gray-20};
+  // --color-border-lighter: #{$base-color-gray-30};
+  // --color-border-light: #{$base-color-gray-40};
+  // --color-border-default: #{$base-color-gray-50};
+  // --color-border-dark: #{$base-color-gray-60};
+  // --color-border-darker: #{$base-color-gray-70};
+  // --color-border-darkest: #{$base-color-gray-80};
+
+  --color-border-level-1: #{$base-color-gray-20};
+  --color-border-level-2: #{$base-color-gray-30};
+  --color-border-level-3: #{$base-color-gray-40};
+  --color-border-level-4: #{$base-color-gray-50};
+  --color-border-level-5: #{$base-color-gray-60};
+  --color-border-level-6: #{$base-color-gray-70};
+  --color-border-level-7: #{$base-color-gray-80};
 
   --color-btn-primary: #{$base-color-blue-500};
 }
