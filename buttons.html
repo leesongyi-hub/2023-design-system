@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>Design System</title>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="container">
+      <header>
+        header
+      </header>
+      <div class="content">
+        <div class="pageMain">
+          <div id="lnb"></div>
+          <main>
+            <h2 class="display-xlg mb40">Buttons</h2>
+            <section>
+              <h3 class="h-lg mb12">Primery Button</h3>
+              <p class="mb32">설명이 들어가는 영역</p>
+
+              <div>
+                <button type="button" class="button">라벨</button>
+              </div> 
+              
+              <div class="mb56">
+                <p class="h-xsm mb12">Gray Color variation</p>
+
+              </div>
+
+              <div class="mb56">
+                <p class="h-xsm mb12">Blue Color variation</p>
+
+              </div>
+            </section>
+          </main>
+        </div>
+        <!--//pageMain-->
+      </div>
+      <!--//content-->
+    </div>
+    <!--//container-->
+  </div>
+  <!--//wrap-->
+</body>
+
+<script>
+$(function(){
+  $("#lnb").load("lnb.html"); 
+});
+</script>
+
+</html>

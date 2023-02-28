@@ -2,12 +2,12 @@ header{position:sticky;top:0;left:0;width:100%;height:72px;border-bottom:1px sol
 
 
 .pageMain{padding-left:240px;height: 100%;}
-.pageMain .lnb{position:fixed;top:0;left:0;width:240px;height:100vh;border-right:1px solid var(--color-border-level-4);background-color:#fff;}
+.pageMain .lnb{position:fixed;bottom:0;left:0;width:240px;height:calc(100vh - 72px);border-right:1px solid var(--color-border-level-4);background-color:#fff;overflow-y:auto;}
 .pageMain main{width:1024px;margin:0 auto;padding:48px 0 72px}
 
 /* table */
 .sample-table{width:100%;}
-.sample-table thead th{background-color:var(--color-bg-level-4);}
+.sample-table thead th{background-color:var(--color-bg-level-2);}
 .sample-table th, .sample-table td{padding:4px 0;border-bottom:1px solid var(--color-border-level-3)}
 .sample-table td{text-align:center;}
 
