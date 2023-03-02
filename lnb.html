@@ -2,19 +2,50 @@
   <a href="javascript:;">Foundation</a>
   <ul>
     <li><a href="/colors.html">Color</a></li>
-    <li><a href="/colors.html">Typography</a></li>
+    <li><a href="/typography.html">Typography</a></li>
+    <li><a href="/iconography.html">Iconography</a></li>
   </ul>
   <a href="javascript:;">Component</a>
   <ul>
-    <li><a href="/Buttons.html">Buttons</a></li>
+    <li><a href="/buttons.html">Buttons</a></li>
+    <li><a href="/chips.html">Chips</a></li>
+    <li><a href="/form.html">Form</a></li>
+    <li><a href="/badge.html">Badge</a></li>
+    <li><a href="/Tab.html">Tab</a></li>
+    <li><a href="/popup.html">Popup</a></li>
   </ul>  
 </nav>
 <!--//lnb-->
 
 <style>
-  .lnb{padding:24px 10px;box-sizing: border-box;font-size:16px;}
-  .lnb a{display:block;width:100%;padding:8px 12px;border-radius: 4px;}
-  .lnb > a{font-size:17px;font-weight:500;}
-  .lnb > a:hover{background-color:var(--color-btn-ghost-hover);}
-  .lnb > a + ul{padding-left:16px;}
+  .lnb{
+    position:fixed;
+    left:0;
+    width:240px;height:calc(100vh - 72px);
+    padding:24px 10px;
+    border-right:1px solid var(--color-border-level-4);
+    font-size:16px;
+    background-color:var(--color-bg-level-1);
+    overflow-y:auto;
+  }
+  .lnb a{
+    display:block;
+    width:100%;
+    padding:8px 12px;
+    border-radius: 4px;
+    color: var(--color-text-300);
+  }
+  .lnb a.active{
+    color: var(--color-blue-600);
+  }
+  .lnb > a{
+    font-size:17px;
+    font-weight:500;
+  }
+  .lnb a:hover{
+    background-color:var(--color-bg-level-4);
+  }
+  .lnb > a + ul li a{
+    padding-left:24px;
+  }
 </style>

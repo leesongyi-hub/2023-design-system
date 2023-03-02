@@ -1,2 +1,23 @@
-.btn{display:inline-block;height:56px;line-height:56px;padding:0 12px;border-radius: 4px;}
-.btn.primary{background-color:var(--color-btn-primary)}
+.btn{border-radius: 4px;cursor: pointer;color:var(--color-text-300)}
+
+.btn.xl{height:48px;line-height:48px;font-size:15px;font-weight:500;padding:0 24px;}
+.btn.l{height:40;line-height:40px;font-size:15px;padding:0 20px;}
+.btn.m{height:36px;line-height:36px;font-size:14px;padding:0 20px;}
+.btn.s{height:32px;line-height:32px;font-size:14px;padding:0 20px;}
+.btn.xs{height:24px;line-height:24px;font-size:13px;padding:0 16px;}
+
+.btn.primary{background-color:var(--color-btn-primary-bg);color:var(--color-white);}
+.btn.primary:hover{background-color:var(--color-btn-primary-hover)}
+
+.btn.primaryLine{border:1px solid var(--color-btn-primaryLine-border);color:var(--color-btn-primaryLine-text);}
+
+.btn.defalut{background-color:var(--color-btn-defalut-bg);}
+.btn.defalut:hover{background-color:var(--color-btn-defalut-hover);}
+
+.btn.defalutLine{border:1px solid var(--color-btn-defalutLine-border);}
+.btn.defalutLine:hover{background-color: var(--color-btn-defalutLine-hover);}
+
+.btn.tinted{background-color:var(--color-btn-tinted-bg);color:var(--color-btn-tinted-text)}
+.btn.tinted:hover{background-color:var(--color-btn-tinted-hover)}
+
+.btn.ghost:hover{background-color: var(--color-btn-ghost-hover);}

@@ -248,7 +248,9 @@ h1, h2 {
 
 /* 4.98 */
 /* 4.98 */
-:root {
+:root, :root[color-theme=light] {
+  --color-white:#fff;
+  --color-black:#000;
   /* text */
   --color-text-100: #1e2021;
   --color-text-200: #242626;
@@ -259,6 +261,7 @@ h1, h2 {
   --color-text-700: #707478;
   --color-text-800: #808387;
   --color-text-900: #97999d;
+  --color-text-primary: #006aff;
   --color-text-info: #0058cc;
   --color-text-error: #dd3e3e;
   --color-text-success: #04855d;
@@ -276,27 +279,107 @@ h1, h2 {
   --color-ico-error: #dd3e3e;
   --color-ico-success: #04855d;
   /* bg */
+  --color-bg-surface: #ffffff;
   --color-bg-primary: #0058cc;
   --color-bg-level-1: #f9f9fb;
   --color-bg-level-2: #f6f7fb;
   --color-bg-level-3: #f4f5f6;
   --color-bg-level-4: #f0f1f2;
   --color-bg-level-5: #e6eaed;
+  --color-bg-level-6: #d5dae0;
   --color-bg-blue-level-1: #f7fcff;
   --color-bg-blue-level-2: #f2f8ff;
   --color-bg-blue-level-3: #edf5ff;
   --color-bg-blue-level-4: #cde6fa;
+  --color-bg-blue-level-5: #bbdefa;
   /* border */
   --color-border-primary: #0058cc;
-  --color-border-level-1: #f6f7fb;
-  --color-border-level-2: #f4f5f6;
-  --color-border-level-3: #f0f1f2;
-  --color-border-level-4: #e6eaed;
-  --color-border-level-5: #d5dae0;
-  --color-border-level-6: #c5cbd1;
-  --color-border-level-7: #b9bdc1;
-  --color-btn-primary: #0060e5;
-  --color-btn-ghost-hover: #f4f5f6;
+  --color-border-level-1: #f9f9fb;
+  --color-border-level-2: #f6f7fb;
+  --color-border-level-3: #f4f5f6;
+  --color-border-level-4: #f0f1f2;
+  --color-border-level-5: #e6eaed;
+  --color-border-level-6: #d5dae0;
+  --color-border-level-7: #c5cbd1;
+  --color-btn-primary-bg: #006aff;
+  --color-btn-primary-hover: #0060e5;
+  --color-btn-primaryLine-border: #006aff;
+  --color-btn-primaryLine-text: #006aff;
+  --color-btn-defalut-bg: var(--color-bg-level-4);
+  --color-btn-defalut-hover: var(--color-bg-level-5);
+  --color-btn-defalutLine-border: var(--color-border-level-5);
+  --color-btn-defalutLine-hover: var(--color-bg-level-4);
+  --color-btn-tinted-bg: var(--color-bg-blue-level-4);
+  --color-btn-tinted-text: var(--color-text-primary);
+  --color-btn-tinted-hover: var(--color-bg-blue-level-5);
+  --color-btn-ghost-hover: var(--color-bg-level-4);
+}
+
+:root[color-theme=dark] {
+  --color-white:#000;
+  --color-black:#fff;
+  /* text */
+  --color-text-100: #f9f9fb;
+  --color-text-200: #f6f7fb;
+  --color-text-300: #f4f5f6;
+  --color-text-400: #f0f1f2;
+  --color-text-500: #e6eaed;
+  --color-text-600: #d5dae0;
+  --color-text-700: #c5cbd1;
+  --color-text-800: #b9bdc1;
+  --color-text-900: #abaeb2;
+  --color-text-primary: #006aff;
+  --color-text-info: #0058cc;
+  --color-text-error: #dd3e3e;
+  --color-text-success: #04855d;
+  /* icon */
+  --color-ico-100: #f9f9fb;
+  --color-ico-200: #f6f7fb;
+  --color-ico-300: #f4f5f6;
+  --color-ico-400: #f0f1f2;
+  --color-ico-500: #e6eaed;
+  --color-ico-600: #d5dae0;
+  --color-ico-700: #c5cbd1;
+  --color-ico-800: #b9bdc1;
+  --color-ico-900: #abaeb2;
+  --color-ico-info: #0058cc;
+  --color-ico-error: #dd3e3e;
+  --color-ico-success: #04855d;
+  /* bg */
+  --color-bg-primary: #0058cc;
+  --color-bg-surface: #1e2021;
+  --color-bg-level-1: #242626;
+  --color-bg-level-2: #303234;
+  --color-bg-level-3: #414344;
+  --color-bg-level-4: #505355;
+  --color-bg-level-5: #606366;
+  --color-bg-level-6: #707478;
+  --color-bg-blue-level-1: #f7fcff;
+  --color-bg-blue-level-2: #f2f8ff;
+  --color-bg-blue-level-3: #edf5ff;
+  --color-bg-blue-level-4: #cde6fa;
+  --color-bg-blue-level-5: #bbdefa;
+  /* border */
+  --color-border-primary: #0058cc;
+  --color-border-level-1: #1e2021;
+  --color-border-level-2: #242626;
+  --color-border-level-3: #303234;
+  --color-border-level-4: #414344;
+  --color-border-level-5: #505355;
+  --color-border-level-6: #606366;
+  --color-border-level-7: #707478;
+  --color-btn-primary-bg: #80C6FF;
+  --color-btn-primary-hover: #0060e5;
+  --color-btn-primaryLine-border: #80C6FF;
+  --color-btn-primaryLine-text: #80C6FF;
+  --color-btn-defalut-bg: var(--color-bg-level-4);
+  --color-btn-defalut-hover: var(--color-bg-level-5);
+  --color-btn-defalutLine-border: var(--color-border-level-5);
+  --color-btn-defalutLine-hover: var(--color-bg-level-4);
+  --color-btn-tinted-bg: var(--color-bg-blue-level-4);
+  --color-btn-tinted-text: var(--color-text-primary);
+  --color-btn-tinted-hover: var(--color-bg-blue-level-5);
+  --color-btn-ghost-hover: var(--color-bg-level-4);
 }
 
 /*display*/
@@ -418,15 +501,92 @@ h1, h2 {
 }
 
 .btn {
-  display: inline-block;
-  height: 56px;
-  line-height: 56px;
-  padding: 0 12px;
   border-radius: 4px;
+  cursor: pointer;
+  color: var(--color-text-300);
+}
+
+.btn.xl {
+  height: 48px;
+  line-height: 48px;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0 24px;
+}
+
+.btn.l {
+  height: 40;
+  line-height: 40px;
+  font-size: 15px;
+  padding: 0 20px;
+}
+
+.btn.m {
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  padding: 0 20px;
+}
+
+.btn.s {
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+  padding: 0 20px;
+}
+
+.btn.xs {
+  height: 24px;
+  line-height: 24px;
+  font-size: 13px;
+  padding: 0 16px;
 }
 
 .btn.primary {
-  background-color: var(--color-btn-primary);
+  background-color: var(--color-btn-primary-bg);
+  color: var(--color-white);
+}
+
+.btn.primary:hover {
+  background-color: var(--color-btn-primary-hover);
+}
+
+.btn.primaryLine {
+  border: 1px solid var(--color-btn-primaryLine-border);
+  color: var(--color-btn-primaryLine-text);
+}
+
+.btn.defalut {
+  background-color: var(--color-btn-defalut-bg);
+}
+
+.btn.defalut:hover {
+  background-color: var(--color-btn-defalut-hover);
+}
+
+.btn.defalutLine {
+  border: 1px solid var(--color-btn-defalutLine-border);
+}
+
+.btn.defalutLine:hover {
+  background-color: var(--color-btn-defalutLine-hover);
+}
+
+.btn.tinted {
+  background-color: var(--color-btn-tinted-bg);
+  color: var(--color-btn-tinted-text);
+}
+
+.btn.tinted:hover {
+  background-color: var(--color-btn-tinted-hover);
+}
+
+.btn.ghost:hover {
+  background-color: var(--color-btn-ghost-hover);
+}
+
+body {
+  background-color: var(--color-bg-surface);
 }
 
 header {
@@ -443,17 +603,6 @@ header {
 .pageMain {
   padding-left: 240px;
   height: 100%;
-}
-
-.pageMain .lnb {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 240px;
-  height: calc(100vh - 72px);
-  border-right: 1px solid var(--color-border-level-4);
-  background-color: #fff;
-  overflow-y: auto;
 }
 
 .pageMain main {

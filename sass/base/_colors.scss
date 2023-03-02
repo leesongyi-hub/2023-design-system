@@ -25,7 +25,7 @@ $base-color-blue-20: #f2f8ff;
 $base-color-blue-30: #edf5ff;
 $base-color-blue-40: #cde6fa;
 $base-color-blue-50: #bbdefa;
-$base-color-blue-60: #9bd0fa;
+$base-color-blue-60: #80C6FF;
 $base-color-blue-70: #73beff;
 $base-color-blue-80: #66b8ff;
 $base-color-blue-90: #52afff;
@@ -78,7 +78,10 @@ $base-color-green-700: #054736;
 $base-color-green-800: #054232;
 $base-color-green-900: #003829;
 
-:root {
+:root, :root[color-theme='light'] {
+  --color-white:#{$base-color-white};
+  --color-black:#{$base-color-black};
+
   /* text */
   --color-text-100: #{$base-color-gray-900};
   --color-text-200: #{$base-color-gray-800};
@@ -90,6 +93,7 @@ $base-color-green-900: #003829;
   --color-text-800: #{$base-color-gray-200};
   --color-text-900: #{$base-color-gray-100};
 
+  --color-text-primary: #{$base-color-blue-400};
   --color-text-info: #{$base-color-blue-600};
   --color-text-error: #{$base-color-red-100};
   --color-text-success: #{$base-color-green-100};
@@ -110,6 +114,7 @@ $base-color-green-900: #003829;
   --color-ico-success: #{$base-color-green-100};
 
   /* bg */
+  --color-bg-surface: #ffffff;
   --color-bg-primary: #{$base-color-blue-600};
   // --color-bg-lighter: #{$base-color-gray-10};
   // --color-bg-light: #{$base-color-gray-20};
@@ -127,11 +132,13 @@ $base-color-green-900: #003829;
   --color-bg-level-3: #{$base-color-gray-30};
   --color-bg-level-4: #{$base-color-gray-40};
   --color-bg-level-5: #{$base-color-gray-50};
+  --color-bg-level-6: #{$base-color-gray-60};
 
   --color-bg-blue-level-1: #{$base-color-blue-10};
   --color-bg-blue-level-2: #{$base-color-blue-20};
   --color-bg-blue-level-3: #{$base-color-blue-30};
   --color-bg-blue-level-4: #{$base-color-blue-40};
+  --color-bg-blue-level-5: #{$base-color-blue-50};
 
   /* border */
   --color-border-primary: #{$base-color-blue-600};
@@ -143,14 +150,113 @@ $base-color-green-900: #003829;
   // --color-border-darker: #{$base-color-gray-70};
   // --color-border-darkest: #{$base-color-gray-80};
 
-  --color-border-level-1: #{$base-color-gray-20};
-  --color-border-level-2: #{$base-color-gray-30};
-  --color-border-level-3: #{$base-color-gray-40};
-  --color-border-level-4: #{$base-color-gray-50};
-  --color-border-level-5: #{$base-color-gray-60};
-  --color-border-level-6: #{$base-color-gray-70};
-  --color-border-level-7: #{$base-color-gray-80};
+  --color-border-level-1: #{$base-color-gray-10};
+  --color-border-level-2: #{$base-color-gray-20};
+  --color-border-level-3: #{$base-color-gray-30};
+  --color-border-level-4: #{$base-color-gray-40};
+  --color-border-level-5: #{$base-color-gray-50};
+  --color-border-level-6: #{$base-color-gray-60};
+  --color-border-level-7: #{$base-color-gray-70};
 
-  --color-btn-primary: #{$base-color-blue-500};
-  --color-btn-ghost-hover: #{$base-color-gray-30};
+  --color-btn-primary-bg: #{$base-color-blue-400};
+  --color-btn-primary-hover: #{$base-color-blue-500};
+
+  --color-btn-primaryLine-border: #{$base-color-blue-400};
+  --color-btn-primaryLine-text: #{$base-color-blue-400};
+
+
+  --color-btn-defalut-bg: var(--color-bg-level-4);
+  --color-btn-defalut-hover: var(--color-bg-level-5);
+
+  --color-btn-defalutLine-border: var(--color-border-level-5);
+  --color-btn-defalutLine-hover: var(--color-bg-level-4);
+
+  --color-btn-tinted-bg: var(--color-bg-blue-level-4);
+  --color-btn-tinted-text: var(--color-text-primary);
+  --color-btn-tinted-hover: var(--color-bg-blue-level-5);
+
+  --color-btn-ghost-hover: var(--color-bg-level-4);
+}
+
+
+:root[color-theme='dark'] {
+  --color-white:#{$base-color-black};
+  --color-black:#{$base-color-white};
+
+  /* text */
+  --color-text-100: #{$base-color-gray-10};
+  --color-text-200: #{$base-color-gray-20};
+  --color-text-300: #{$base-color-gray-30};
+  --color-text-400: #{$base-color-gray-40};
+  --color-text-500: #{$base-color-gray-50};
+  --color-text-600: #{$base-color-gray-60};
+  --color-text-700: #{$base-color-gray-70};
+  --color-text-800: #{$base-color-gray-80};
+  --color-text-900: #{$base-color-gray-90};
+
+  --color-text-primary: #{$base-color-blue-400};
+  --color-text-info: #{$base-color-blue-600};
+  --color-text-error: #{$base-color-red-100};
+  --color-text-success: #{$base-color-green-100};
+
+  /* icon */
+  --color-ico-100: #{$base-color-gray-10};
+  --color-ico-200: #{$base-color-gray-20};
+  --color-ico-300: #{$base-color-gray-30};
+  --color-ico-400: #{$base-color-gray-40};
+  --color-ico-500: #{$base-color-gray-50};
+  --color-ico-600: #{$base-color-gray-60};
+  --color-ico-700: #{$base-color-gray-70};
+  --color-ico-800: #{$base-color-gray-80};
+  --color-ico-900: #{$base-color-gray-90};
+
+  --color-ico-info: #{$base-color-blue-600};
+  --color-ico-error: #{$base-color-red-100};
+  --color-ico-success: #{$base-color-green-100};
+
+  /* bg */
+  --color-bg-primary: #{$base-color-blue-600};
+
+  --color-bg-surface: #{$base-color-gray-900};
+  --color-bg-level-1: #{$base-color-gray-800};
+  --color-bg-level-2: #{$base-color-gray-700};
+  --color-bg-level-3: #{$base-color-gray-600};
+  --color-bg-level-4: #{$base-color-gray-500};
+  --color-bg-level-5: #{$base-color-gray-400};
+  --color-bg-level-6: #{$base-color-gray-300};
+
+  --color-bg-blue-level-1: #{$base-color-blue-10};
+  --color-bg-blue-level-2: #{$base-color-blue-20};
+  --color-bg-blue-level-3: #{$base-color-blue-30};
+  --color-bg-blue-level-4: #{$base-color-blue-40};
+  --color-bg-blue-level-5: #{$base-color-blue-50};
+
+  /* border */
+  --color-border-primary: #{$base-color-blue-600};
+
+  --color-border-level-1: #{$base-color-gray-900};
+  --color-border-level-2: #{$base-color-gray-800};
+  --color-border-level-3: #{$base-color-gray-700};
+  --color-border-level-4: #{$base-color-gray-600};
+  --color-border-level-5: #{$base-color-gray-500};
+  --color-border-level-6: #{$base-color-gray-400};
+  --color-border-level-7: #{$base-color-gray-300};
+
+  --color-btn-primary-bg: #{$base-color-blue-60};
+  --color-btn-primary-hover: #{$base-color-blue-500};
+
+  --color-btn-primaryLine-border: #{$base-color-blue-60};
+  --color-btn-primaryLine-text: #{$base-color-blue-60};
+
+  --color-btn-defalut-bg: var(--color-bg-level-4);
+  --color-btn-defalut-hover: var(--color-bg-level-5);
+
+  --color-btn-defalutLine-border: var(--color-border-level-5);
+  --color-btn-defalutLine-hover: var(--color-bg-level-4);
+
+  --color-btn-tinted-bg: var(--color-bg-blue-level-4);
+  --color-btn-tinted-text: var(--color-text-primary);
+  --color-btn-tinted-hover: var(--color-bg-blue-level-5);
+
+  --color-btn-ghost-hover: var(--color-bg-level-4);
 }
